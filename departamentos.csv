@@ -1,0 +1,13 @@
+departamento_id;nome_departamento;diretoria
+1;Engenharia de Software;Produto & Tecnologia
+2;Dados & Analytics;Produto & Tecnologia
+3;Produto;Produto & Tecnologia
+4;Comercial;Receita
+5;Marketing;Receita
+6;Customer Success;Receita
+7;Suporte Tecnico;Operacoes
+8;Operacoes;Operacoes
+9;Recursos Humanos;Administrativo
+10;Financeiro;Administrativo
+11;Juridico;Administrativo
+12;Administrativo;Administrativo
