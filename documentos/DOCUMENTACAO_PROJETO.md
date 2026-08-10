@@ -85,8 +85,6 @@ flowchart LR
 
 Papel de cada etapa no pipeline: Python entrega os dados brutos em CSV; PostgreSQL é onde o dado é modelado, limpo e analisado (é daqui que saem os números oficiais do projeto); Power BI transforma o resultado das análises num dashboard visual; GitHub documenta e publica o código e os resultados; LinkedIn divulga o projeto pronto.
 
-![Pipeline de Ferramentas](../04_prints/fluxograma_ferramentas.png)
-
 ---
 
 ## ◾ PostgreSQL - Conceitos
@@ -151,10 +149,10 @@ Estrutura padrão de pastas
   departamentos.csv, funcionarios.csv, avaliacoes_desempenho.csv
 
 04_prints/
-  fluxograma_ferramentas.png, prints reais da execução no PostgreSQL, print do dashboard final
+  capa_linkedin.png, print_dashboard_final.png, print_sql_salario_senioridade.png
 
 documentos/
-  DOCUMENTACAO_PROJETO.md, GUIA_POWER_BI.md, 05_post_linkedin.md
+  DOCUMENTACAO_PROJETO.md
 
 README.md
 00_gerar_base.py
