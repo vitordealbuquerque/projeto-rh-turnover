@@ -2,7 +2,7 @@
 
 Projeto de portfólio para transição de carreira para Análise de Dados. Setor: **people analytics / RH corporativo**. Ciclo completo: modelagem SQL, limpeza, análise e dashboard executivo em Power BI.
 
-Passo a passo de como o dashboard foi montado (modelo, medidas DAX, gráficos): [`documentos/GUIA_POWER_BI.md`](documentos/GUIA_POWER_BI.md). Documentação completa do projeto: [`documentos/DOCUMENTACAO_PROJETO.md`](documentos/DOCUMENTACAO_PROJETO.md).
+Documentação completa do projeto (conceitos, dataset, checklist e modelo do dashboard): [`documentos/DOCUMENTACAO_PROJETO.md`](documentos/DOCUMENTACAO_PROJETO.md).
 
 ---
 
@@ -20,7 +20,7 @@ A base foi gerada em Python, com distribuições calibradas para reproduzir padr
 
 A modelagem, limpeza e análise rodaram em PostgreSQL, num schema próprio (`rh`). O pipeline usa CTE, window function (`RANK` para ranquear departamentos por turnover), `FILTER (WHERE ...)` para as contagens condicionais e `PERCENTILE_CONT` para medir a distribuição salarial por senioridade. Os blocos de análise estão em `02_sql/04_analises.sql`.
 
-O dashboard final foi montado no Power BI, com modelo semântico próprio, medidas DAX e visuais nativos (cartão, barras e colunas). O passo a passo completo, incluindo o prompt da imagem de fundo usada como base do layout, está em `documentos/GUIA_POWER_BI.md`.
+O dashboard final foi montado no Power BI, com modelo semântico próprio, medidas DAX e visuais nativos (cartão, barras e colunas).
 
 ---
 
@@ -47,9 +47,7 @@ projeto-rh-turnover/
 │   ├── print_sql_desempenho_motivo_saida.png     # print real do SQL — desempenho x motivo de saída
 │   └── print_sql_salario_senioridade.png         # print real do SQL — distribuição salarial (PERCENTILE_CONT)
 └── documentos/
-    ├── DOCUMENTACAO_PROJETO.md             # documentação completa do projeto (conceitos, dataset, checklist)
-    ├── GUIA_POWER_BI.md                    # passo a passo do dashboard: modelo, medidas DAX, gráficos
-    └── 05_post_linkedin.md                 # texto pronto pra postar
+    └── DOCUMENTACAO_PROJETO.md             # documentação completa do projeto (conceitos, dataset, checklist, modelo do dashboard)
 ```
 
 ---
@@ -62,7 +60,7 @@ O bloco de topo traz os cinco números que resumem o quadro: headcount total, tu
 
 ## Rodando localmente
 
-Instale PostgreSQL 14+ e um cliente (pgAdmin ou psql). Crie um banco `rh_turnover_db`, rode `02_sql/01_criar_tabelas.sql`, carregue os CSV de `03_dados/` com `02_sql/02_carga_dados.sql` e rode `02_sql/03_limpeza.sql` seguido de `02_sql/04_analises.sql`. Para o dashboard, siga `documentos/GUIA_POWER_BI.md` para remontar em Power BI Desktop.
+Instale PostgreSQL 14+ e um cliente (pgAdmin ou psql). Crie um banco `rh_turnover_db`, rode `02_sql/01_criar_tabelas.sql`, carregue os CSV de `03_dados/` com `02_sql/02_carga_dados.sql` e rode `02_sql/03_limpeza.sql` seguido de `02_sql/04_analises.sql`. O modelo e as medidas do dashboard estão documentados em `documentos/DOCUMENTACAO_PROJETO.md`.
 
 ---
 
