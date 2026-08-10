@@ -40,12 +40,9 @@ projeto-rh-turnover/
 │   ├── funcionarios.csv                    # 2.500 funcionários
 │   └── avaliacoes_desempenho.csv           # 4.333 avaliações (ciclos 2024-S1 e 2024-S2)
 ├── 04_prints/                              # imagens reais do projeto
-│   ├── fluxograma_ferramentas.png          # pipeline de ferramentas
 │   ├── capa_linkedin.png                   # capa com os KPIs principais
 │   ├── print_dashboard_final.png           # dashboard Power BI completo
-│   ├── print_sql_turnover_departamento.png       # print real do SQL — ranking de turnover por departamento (RANK)
-│   ├── print_sql_desempenho_motivo_saida.png     # print real do SQL — desempenho x motivo de saída
-│   └── print_sql_salario_senioridade.png         # print real do SQL — distribuição salarial (PERCENTILE_CONT)
+│   └── print_sql_salario_senioridade.png   # print real do SQL — distribuição salarial (PERCENTILE_CONT)
 └── documentos/
     └── DOCUMENTACAO_PROJETO.md             # documentação completa do projeto (conceitos, dataset, checklist, modelo do dashboard)
 ```
