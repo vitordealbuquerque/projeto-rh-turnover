@@ -77,8 +77,11 @@ ORDER BY nota_media;
 
 -- ANÁLISE 2b (extra, mesma ideia com LAG) — compara a nota do ciclo 2024-S2
 -- com a nota do ciclo anterior, funcionário a funcionário. Amostra pequena
--- pra quem desligou (poucos têm as duas avaliações no ano), mas confirma
--- a mesma direção do resultado acima.
+-- pra quem desligou (poucos têm as duas avaliações no ano). Os voluntários
+-- caem 0,43 ponto de S1 para S2 (3,70 para 3,27, só 11 pares), enquanto os
+-- ativos quase não mudam. Com 11 pares não dá para concluir nada, mas esse
+-- resultado não confirma o "praticamente idêntico" da média agregada acima:
+-- ele vale para a média do ano, não para a evolução entre os ciclos.
 WITH evolucao AS (
     SELECT
         a.funcionario_id,
