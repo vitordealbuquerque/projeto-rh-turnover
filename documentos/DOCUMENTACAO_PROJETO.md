@@ -60,7 +60,7 @@ Cláusula que aplica uma condição dentro de uma função de agregação, sem p
 ________________
 
 **Ciclo de avaliação**
-Período semestral (2024-S1, 2024-S2) em que cada funcionário ativo recebe uma nota de desempenho e um score de engajamento.
+Período semestral (2024-S1, 2024-S2; não há avaliação de outros anos) em que cada funcionário ativo recebe uma nota de desempenho e um score de engajamento.
 ________________
 
 **Medida DAX**
@@ -189,7 +189,7 @@ Colunas
 
 ### TABELA: avaliacoes_desempenho (fato)
 
-Descrição: uma linha por funcionário por ciclo semestral em que ele estava ativo (2024-S1 e 2024-S2).
+Descrição: uma linha por funcionário por ciclo semestral em que ele estava ativo (2024-S1 e 2024-S2; só 2024). Dos 336 desligados, 152 não têm nenhuma avaliação.
 
 Colunas
 * `avaliacao_id` — identificador único
@@ -210,7 +210,7 @@ Colunas
 * Turnover geral: 13,4% · Tempo médio de casa: 3,4 anos · Salário médio: R$ 8.535,32
 * Desligamentos por tipo: Voluntário 70,8% (238) · Involuntário 24,4% (82) · Aposentadoria 4,8% (16)
 * Turnover por departamento, do maior pro menor: Comercial 21,6% · Customer Success 20,8% · Suporte Técnico 19,1% · Marketing 16,0% · Administrativo 12,8% · Financeiro 12,2% · Operações 12,0% · Engenharia de Software 11,6% · Recursos Humanos 11,2% · Produto 8,7% · Dados & Analytics 7,7% · Jurídico 7,6%
-* Desempenho por motivo de saída: desligado involuntário — nota média 2,70, engajamento médio 43,0 (50 avaliações); desligado voluntário — nota média 3,69, engajamento médio 71,4 (142 avaliações); ativo — nota média 3,69, engajamento médio 71,2 (4.133 avaliações)
+* Desempenho por motivo de saída: desligado involuntário — nota média 2,70, engajamento médio 43,0 (50 avaliações); desligado voluntário — nota média 3,69, engajamento médio 71,4 (142 avaliações); ativo — nota média 3,69, engajamento médio 71,2 (4.133 avaliações). A média de todas as avaliações da empresa é 3,68; o 3,69 é só dos ativos. As 50 avaliações de involuntários são de 45 pessoas, amostra pequena
 * Salário mediano por senioridade: Gerente R$ 22.603,46 · Especialista R$ 15.807,22 · Coordenador R$ 15.138,59 · Sênior R$ 12.290,26 · Pleno R$ 7.774,38 · Júnior R$ 4.482,84 · Estagiário R$ 2.185,82
 * Turnover por tempo de casa: 22,5% no primeiro ano, caindo pra 14,8% (1-2 anos), 12,2% (2-4 anos) e 11,0% (acima de 4 anos)
 * Engajamento por modelo de trabalho (2024-S2): Presencial 72,1 · Remoto 71,1 · Híbrido 71,0 — sem diferença relevante entre os três
